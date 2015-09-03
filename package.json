@@ -1,0 +1,40 @@
+{
+  "name": "sails-hook-agenda",
+  "version": "1.0.0",
+  "description": "Agenda jobs into Sails.js app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha -b --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konstantinzolotarev/sails-hook-agenda.git"
+  },
+  "keywords": [
+    "agenda",
+    "sails",
+    "sailsjs",
+    "jobs",
+    "cron"
+  ],
+  "author": "Konstantin Zolotarev <konstantin.zolotarev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konstantinzolotarev/sails-hook-agenda/issues"
+  },
+  "homepage": "https://github.com/konstantinzolotarev/sails-hook-agenda#readme",
+  "sails": {
+    "isHook": true
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chance": "^0.7.7",
+    "mocha": "^2.3.0",
+    "sails": "^0.11.0"
+  },
+  "dependencies": {
+    "agenda": "^0.6.28",
+    "async": "^1.4.2",
+    "lodash": "^3.10.1"
+  }
+}
