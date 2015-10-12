@@ -1,6 +1,8 @@
 # sails-hook-agenda
 Agenda jobs in Sails.js application
 
+[![Build Status](https://travis-ci.org/konstantinzolotarev/sails-hook-agenda.svg?branch=master)](https://travis-ci.org/konstantinzolotarev/sails-hook-agenda)
+
 # Configure
 
 # Testing
