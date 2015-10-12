@@ -16,4 +16,13 @@ describe('Basic :: ', function () {
     expect(sails.hooks.agenda).to.be.ok;
     expect(sails.agenda).to.be.ok;
   });
+
+  it('agenda should has all methods', function () {
+    expect(sails.agenda).to.have.property('every')
+      .and.to.be.a('function');
+    expect(sails.agenda).to.have.property('define')
+      .and.to.be.a('function');
+    expect(sails.agenda).to.have.property('schedule')
+      .and.to.be.a('function');
+  });
 });
