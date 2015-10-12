@@ -1,10 +1,12 @@
 'use strict';
 
-module.exports = {
+module.exports = function(app) {
 
-  defaults: require('./lib/defaults'),
+  return {
+    defaults: require('./lib/defaults'),
 
-  configure: require('./lib/configure')(sails),
+    configure: require('./lib/configure')(app),
 
-  initialize: require('./lib/initialize')(sails)
+    initialize: require('./lib/initialize')(app)
+  };
 };
