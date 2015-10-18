@@ -25,4 +25,14 @@ describe('Basic :: ', function () {
     expect(sails.agenda).to.have.property('schedule')
       .and.to.be.a('function');
   });
+
+  it('agenda should create task and execute it', function (done) {
+
+    sails.agenda.define('test', function(job) {
+      expect(job).to.be.ok;
+      done();
+    });
+
+    sails.agenda.now('test', {test: 1});
+  });
 });
